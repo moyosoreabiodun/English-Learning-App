@@ -81,6 +81,9 @@ img {
 .your-lesson-body {
     margin-bottom: 0;
 }
+.your-card-body {
+    padding: 10px 5px;
+}
 .your-lesson-card-img-top{
     align-self: center;
     width: 70%;
