@@ -1,0 +1,356 @@
+/* General Styles */
+html{
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8ff;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+}
+.navbar a {
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.navbar a:hover, .navbar a:active {
+    color: #6471BA;
+    border-radius: 5px;
+}
+
+
+/* Home Page Style */
+.welcome, .daily-goal, .your-lesson, .leaderboard {
+    width: 100%;
+    padding: 1em;
+}
+.welcome-text p{
+    margin-bottom: 0;
+}
+.hello-rachel{
+    font-weight: 600;
+    opacity: 0.8;
+}
+.ready-to {
+    font-weight: bold;
+    color: #6471BA;
+}
+.play-english{
+    font-weight: bold;
+    color: #FF9564;
+}
+.daily-goal {
+    margin: 1.5em;
+    border: 2px solid #6471BA;
+    border-radius: 2em;
+}
+.daily-goal p{
+    color: #6471BA;
+    padding-left: 2.5em;
+}
+.your-lesson-body {
+    margin-bottom: 0;
+}
+.your-lesson-card-img-top{
+    align-self: center;
+    width: 70%;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: .2em .8em .5em;
+}
+.progress-bar {
+    height: 1em;
+    border-radius: 0.5em;
+}
+.progress{
+    display: inline-flexbox;
+}
+.lesson-details h5{
+    font-weight: bold;
+}
+.lesson-details p {
+    opacity: 0.5;
+}
+.welcome, .your-lesson-title, .leaderboard-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.leaderboard-title h4, .your-lesson-title h4 {
+    font-weight: bold;
+}
+.leaderboard-title {
+    padding-top: 0;
+}
+.leaderboard-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 1em;
+    border: 1px solid #dee2e6;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #FF9564;
+}
+.user-info {
+    height: 50px;
+    flex-grow: 1;
+    margin-right: 100px;
+}
+.user-info h5{
+    font-weight: bold;
+}
+.user-info p{
+    opacity: 0.5;
+}
+.streak-info, .streak-count {
+    display: flex;
+    align-items: center;
+}
+.streak-count {
+    width: 3em;
+    height: 1.5em;
+    background-color: #fff;
+    padding: .3em;
+    border-radius: 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+.current-streak{
+    font-weight: bold;
+}
+.streak-info svg {
+    margin-right: 5px;
+}
+.streak-info span{
+    color: #FF9564;
+    font-weight: bold;
+}
+.your-lesson-card {
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+}
+
+/* Stats Page Style */
+.calendar, .skills{
+    width: 100%;
+    padding: 1em;
+}
+.month h3{
+    font-weight: bolder;
+}
+.skills-title, .month, .date {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.skills-title h4 {
+    font-weight: bolder;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: inline-block;
+    margin-right: 18px;
+}
+li:last-child {
+    margin-right: 0;
+}
+.date-number {
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #6471BA;
+    padding: 3px;
+}
+.day {
+    padding-top: 5px;
+    font-weight: 300;
+}
+.date-three, .date-four{
+    background-color: #6471BA;
+}
+.date-five {
+    background-color: #FF9564;
+    color: #ffffff;
+}
+.day-five {
+    color: #FF9564;
+}
+.skill-card{
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+}
+.skill-card-img-top{
+    background-color: #6471BA;
+    align-self: center;
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.skill-card-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.skill-percent {
+   opacity: 0.5;
+}
+.orange-button, .orange-button:hover, .orange-button:active {
+    padding: .5em 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #FF9564;
+    border: 2px solid #FF9564;
+}
+.white-button, .white-button:hover {
+    padding: .5em 1.5em;
+    color: #FF9564;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #FF9564;
+}
+
+
+
+
+
+
+
+
+
+
+
+.circular-progress {
+    width: 5em;
+    height: 5em;
+    font-size: 30px;
+    color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    text-align: center;
+    line-height: 200px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px white;
+  }
+  .circular-progress::after {
+    content: "%";
+  }
+  .circular-progress .title {
+    position: relative;
+    z-index: 100;
+  }
+  .circular-progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .circular-progress .left,
+  .circular-progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 10px solid #FF9564;
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+  }
+  .circular-progress .left {
+    animation: load1 1s linear forwards;
+  }
+  .circular-progress:nth-of-type(2) .right,
+  .circular-progress:nth-of-type(3) .right {
+    animation: load2 0.5s linear forwards 1s;
+  }
+  .circular-progress:last-of-type .right,
+  .circular-progress:first-of-type .right {
+    animation: load3 0.8s linear forwards 1s;
+  }
+  @keyframes load1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes load2 {
+    0% {
+      z-index: 100;
+      transform: rotate(180deg);
+    }
+    100% {
+      z-index: 100;
+      transform: rotate(270deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      z-index: 100;
+      transform: rotate(180deg);
+    }
+    100% {
+      z-index: 100;
+      transform: rotate(315deg);
+    }
+  }
