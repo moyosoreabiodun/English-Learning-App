@@ -116,10 +116,9 @@ img {
     display: flex;
     align-items: center;
     padding: 15px;
-    margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1.5rem;
     border: 1px solid #dee2e6;
-    width: 100%;
+    width: 109%;
     background-color: #ffffff;
     border-radius: 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
@@ -235,9 +234,7 @@ li:last-child {
 .skill-card-img-top{
     background-color: #6471BA;
     align-self: center;
-    width: 50%;
     border-radius: 50%;
-    margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
@@ -256,7 +253,7 @@ li:last-child {
     border: 2px solid #FF9564;
 }
 .white-button, .white-button:hover {
-    padding: .5em 1.5em;
+    padding: 10px;
     color: #FF9564;
     font-weight: bold;
     background-color: #ffffff;
